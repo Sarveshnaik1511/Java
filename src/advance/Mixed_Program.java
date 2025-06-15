@@ -446,6 +446,24 @@ public class Mixed_Program {
 		
 	}
 	
+	public void primeNum() {
+		// print first 10 prime number 30 to 100
+		
+		for(int i=30;i<300;i++) {
+			int count=0;
+			for(int j=2;j<i;j++) {
+				if(i%j==0) {
+					count++;
+				}
+			}
+			if(count==0) {
+				System.out.println(i);
+			}
+		}
+		
+	}
+	
+	
 	
 	
 	
@@ -454,6 +472,6 @@ public class Mixed_Program {
 		Mixed_Program obj =new Mixed_Program();
 		//ArmstrongNumber obj1 =new ArmstrongNumber();
 		//obj.panindrome();
-		obj.PerfectSquareNumber();
+		obj.primeNum();
 		}
 }

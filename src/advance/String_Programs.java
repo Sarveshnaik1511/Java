@@ -230,12 +230,48 @@ public class String_Programs {
 				
 			}
 		}
+		
+		public void fetchPasswordFromString() {
+			String password = "Please fetch password from this string and the password is 'sarvesh@123', find it now";
+			
+			String[] pass = password.split("'");
+//			System.out.println(pass[0]);
+//			System.out.println(pass[1]);
+//			System.out.println(pass[2]);
+//			String[] pass1 =pass[1].split("'");
+//			System.out.println(pass1.length);
+//			System.out.println(pass1[0]);
+			String finalPass= pass[1].split("'")[0];
+			System.out.println(finalPass);
+			
+			
+		}
+		
+		public void removeDuplicateWords() {
+			
+			String s = "sarvesh naik sarvesh naik";
+			
+			String [] s1 = s.split(" ");
+			
+			for(int i=0;i<s1.length;i++) {
+				for(int j=i+1;j<s1.length;j++) {
+					if(s1[i].equalsIgnoreCase(s1[j])) {
+						s1[j]="";
+					}
+				}
+			}
+			for(int i=0;i<s1.length;i++) {
+				if(s1.length>0) {
+				System.out.println(s1[i]);
+			    }
+			}
+		}
 	
 		
 		
 	public static void main(String[] args) {
 		String_Programs obj =new String_Programs();
-		obj.Repeated();
+		obj.removeDuplicateWords();
 	}
 	
 }

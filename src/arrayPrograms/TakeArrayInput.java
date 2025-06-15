@@ -14,6 +14,7 @@ public class TakeArrayInput {
 		int n =sc.nextInt();
 		
 		sc.nextLine();
+		sc.close();
 		
 		String array []=new String[n];
 		for(int i=0;i<array.length;i++) {
@@ -35,6 +36,7 @@ public class TakeArrayInput {
 		Scanner sc =new Scanner(System.in);
 		int arrayLen =sc.nextInt();
 		sc.nextLine();
+		sc.close();
 		
 		String newArray[] = new String[arrayLen];
 		

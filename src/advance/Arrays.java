@@ -1,4 +1,4 @@
-package advance;
+ package advance;
 
 public class Arrays {
 	
@@ -423,7 +423,7 @@ public class Arrays {
 		
 	public static void main(String[] args) {
 		Arrays obj = new Arrays();
-		obj.removeDuplicateFromStringArray();
+		obj.printSecondSmallestAndSecondLargestNumber();
 	}
 
 }

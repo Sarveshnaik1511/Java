@@ -19,6 +19,8 @@ public class CountDuplicateCharacters {
 			}
 			if(count>0) {
 			System.out.println(c[i] +" repeated "+count +" times");
+
+		
 		}
 			}
 		
